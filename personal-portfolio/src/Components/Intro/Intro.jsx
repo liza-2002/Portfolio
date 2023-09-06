@@ -21,6 +21,7 @@ function Intro() {
                     <span>
                         Liza
                     </span>
+                    {/* <div className='blur' style={{background:"rgb(338 210 255",top:'0rem',width:'31rem',height:'31rem',left:'-2%'}}></div> */}
                     <span>
                         Highly motivated student with
                          a passion for technology and a 
@@ -31,6 +32,7 @@ function Intro() {
                         achieve project goals.
                     </span>
                 </div>
+                <div className='blur' style={{background:"rgb(338 210 255)",top:'1rem',left:'-50%'}}></div>
                 <button className="button i-button">Hire me</button>
                 <div className="i-icons">
                     <img src={Github} alt="" />
@@ -50,8 +52,9 @@ function Intro() {
                     <FloatingDiv image={thumbup} txt1='Best' txt2='Design'/> 
                 </div>
                 {/*blur div*/}
+                {/* <div className='blur' style={{background:'#bfc3e',top:'14rem',width:'31rem',height:'21rem',left:'40%'}}></div> */}
                 <div className='blur' style={{background:"rgb(338 210 255"}}></div>
-                <div className='blur' style={{background:'#C1F5FF',top:'14rem',width:'21rem',height:'11rem',left:'-9%'}}></div>
+                <div className='blur' style={{background:'#C1F5FF',top:'12rem',width:'11rem',height:'15rem',left:'-9%'}}></div>
             </div>
         </div>
     )
