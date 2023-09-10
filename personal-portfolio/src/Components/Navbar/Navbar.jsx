@@ -12,9 +12,9 @@ function Navbar() {
                 <ul style={{listStyleType: 'none'}}>
                     <li>Home</li>
                     <li>Services</li>
-                    <li>Exprience</li>
+                    <li>Skills</li>
                     <li>Portfolio</li>
-                    <li>Testimonial</li>
+                    <li>About</li>
 
                 </ul>
             </div>
