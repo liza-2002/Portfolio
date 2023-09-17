@@ -83,3 +83,22 @@
     left: 18rem;
     top: 8rem;
 }
+@media screen and (max-width:480px) {
+    .skill{
+        flex-direction: column;
+        height: 30rem;padding: 0;
+        gap: 5rem;
+    }
+    .skill-right{
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        transform: scale(0.7);
+    }
+    .main-circle{
+        position: static;
+    }
+    .back-circle{
+        left: 8rem!important;
+    }
+}

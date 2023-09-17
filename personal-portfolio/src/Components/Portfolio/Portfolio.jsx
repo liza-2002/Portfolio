@@ -1,6 +1,5 @@
 import React from 'react'
 import './Portfolio.css';
-// import {Swiper,SwiperSlide} from 'swiper/react';
 import Sidebar from "../../img/sidebar.png"
 import Ecommerce from "../../img/ecommerce.png";
 import HOC from "../../img/hoc.png";
@@ -8,7 +7,6 @@ import MusicApp from "../../img/musicapp.png";
 import Link from '../../img/link.png'
 import {ThemeContext} from '../../Context'
 import { useContext } from 'react';
-import { motion } from 'framer-motion';
 
 
 function Portfolio() {
@@ -24,7 +22,7 @@ function Portfolio() {
                 <button style={{color:darkMode?'white':''}} className="btn">All</button>
                 <button style={{color:darkMode?'white':''}} className="btn">Product</button>
                 <button style={{color:darkMode?'white':''}} className="btn">interacting</button>
-                <button style={{color:darkMode?'white':''}} className="btn">Web App</button>
+                <button style={{color:darkMode?'white':''}}className="btn">Web App</button>
             </div>
             
             <div className="portfolio-gallery">

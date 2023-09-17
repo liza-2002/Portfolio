@@ -40,3 +40,15 @@
 {
     color:var(--orange);
 }
+@media (max-width: 480px) {
+    .experience {
+      gap: 1rem; /* Reduce the gap between achievements further for even smaller screens */
+    }
+  
+    .circle {
+      width: 3rem; /* Reduce the circle size for even smaller screens */
+      height: 3rem; /* Reduce the circle size for even smaller screens */
+      font-size: 1.2rem; /* Reduce the font size for even smaller screens */
+      margin-bottom: 0.5rem; /* Reduce the margin between the circle and text further for even smaller screens */
+    }
+  }

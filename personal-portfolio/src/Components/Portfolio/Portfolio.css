@@ -131,3 +131,34 @@
     left: 56%;
     filter: blur(52px);
 }
+@media screen and (max-width: 480px) {
+    .portfolio{
+        margin-top: 5rem;
+        height: 40rem;
+    }
+    .portfolio span:nth-of-type(1) {
+     text-align: center;
+    }
+  
+    .portfolio span:nth-of-type(2) {
+      text-align: center;
+    }
+  
+    .filter-buttons .btn {
+      font-size: 0.6rem; 
+      margin-left: 0.3rem; 
+    }
+  
+    .port-content {
+      font-size: 0.7rem;
+    }
+  
+    .port-content h3 {
+      font-size: 0.9rem;
+    }
+    .port-box{
+        height: 70px;
+        width: 90px;
+    }
+   
+  }
