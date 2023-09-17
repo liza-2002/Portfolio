@@ -22,11 +22,12 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
+    color: black;
 }
 .circle::before{
     border-radius: 100%;
     content: '';
-    background-image: linear-gradient(to bottom,#f9fb87 0%,#ff5cf7 100%);
+    background-image: linear-gradient(to bottom,#f9fb87 0%,#5cc3ff 100%);
     top: -8px;
     left: -8px;
     bottom: -8px;
@@ -37,5 +38,5 @@
 }
 .achievement span:nth-of-type(2)
 {
-    color: rgb(197, 36, 197);
+    color:var(--orange);
 }

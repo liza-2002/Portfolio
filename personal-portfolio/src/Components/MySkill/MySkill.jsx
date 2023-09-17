@@ -1,88 +1,3 @@
-// import React from 'react'
-// import './MySkill.css'
-// import Upwork from "../../img/Upwork.png";
-// import Fiverr from "../../img/fiverr.png";
-// import Shopify from "../../img/Shopify.png";
-// import Amazon from "../../img/amazon.png";
-// import Facebook from "../../img/Facebook.png";
-// function MySkill() {
-//     return (
-//         <div className="skill-main">
-//             <div className="skill-left">
-//                     <div className="skill-name">
-//                     <span>My Skills</span>
-//                     <span>Technical Skills</span>
-//                 </div>
-//                 <div className="skill-bar">
-//                     <div className="info">
-//                         <p>Html</p>
-//                         <p>72%</p>
-//                     </div>
-//                     <div className="bar">
-//                         <span class="html"></span>
-//                     </div>
-//                 </div>
-
-
-//                 <div className="skill-bar">
-//                     <div className="info">
-//                         <p>css</p>
-//                         <p>58%</p>
-//                     </div>
-//                     <div className="bar">
-//                         <span class="css"></span>
-//                     </div>
-//                 </div>
-
-//                 <div className="skill-bar">
-//                     <div className="info">
-//                         <p>Javascript</p>
-//                         <p>68%</p>
-//                     </div>
-//                     <div className="bar">
-//                         <span class="javascript"></span>
-//                     </div>
-//                 </div>
-
-//                 <div className="skill-bar">
-//                     <div className="info">
-//                         <p>React</p>
-//                         <p>62%</p>
-//                     </div>
-//                     <div className="bar">
-//                         <span class="react"></span>
-//                     </div>
-//                 </div>
-//             </div>
-//             {/*========right side=======*/}
-//             <div className="skill-right">
-//                 <div className="main-circle">
-//                     <div className="sec-circle">
-//                         <img src={Upwork} alt=""/>
-//                     </div>
-//                     <div className="sec-circle">
-//                         <img src={Fiverr} alt=""/>
-//                     </div>
-//                     <div className="sec-circle">
-//                         <img src={Amazon} alt=""/>
-//                     </div>
-//                     <div className="sec-circle">
-//                         <img src={Shopify} alt=""/>
-//                     </div>
-//                     <div className="sec-circle">
-//                         <img src={Facebook} alt=""/>
-//                     </div>
-//                 </div>
-//                 {/*======background circle=======*/}
-//                 <div className="back-circle blueCircle"></div>
-//                 <div className="back-circle yellowCircle"></div>
-//             </div>
-//         </div>
-//     )
-// }
-// export default MySkill
-
-
 import React from 'react'
 import './MySkill.css'
 import C from '../../img/c.png';
@@ -90,12 +5,19 @@ import Cpp from '../../img/cpp.png'
 import Js from '../../img/js.png'
 import Html from '../../img/html.png'
 import Java from '../../img/java.png';
+import { ThemeContext } from '../../Context'
+import { useContext } from 'react';
+import { motion } from 'framer-motion';
+
 function MySkill() {
+    const transition = { duratin: 1, type: 'spring' }
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
     return (
-        <div className="skill">
+        <div className="skill" id="MySkill">
             {/*=====left side=====*/}
             <div className="awesome">
-                <span>My Skills</span>
+                <span style={{ color: darkMode ? 'white' : '' }}>My Skills</span>
                 <span>Technical Skill</span>
                 <span>
                     "Hello! I'm an aspiring web designer.<br />
@@ -112,12 +34,17 @@ function MySkill() {
             </div>
             {/*========right side=======*/}
             <div className="skill-right">
-                
+
                 {/*======background circle=======*/}
                 <div className="back-circle blueCircle"></div>
                 <div className="back-circle yellowCircle"></div>
 
-                <div className="main-circle">
+                <motion.div
+                    initial={{ rotate: 45 }}
+                    whileInView={{ rotate: 360 }}
+                    viewport={{ margin: '-40px' }}
+                    transition={transition}
+                    className="main-circle">
                     <div className="sec-circle">
                         <img src={Js} alt="" />
                     </div>
@@ -133,8 +60,8 @@ function MySkill() {
                     <div className="sec-circle">
                         <img src={Html} alt="" />
                     </div>
-                    
-                </div>  
+
+                </motion.div>
             </div>
         </div>
     )
