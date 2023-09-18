@@ -27,8 +27,10 @@
         margin-top: 0;
         flex-direction: column;
         gap: 5rem;
-        height: 25rem;
+        height: 55rem;
         padding: 0;
     }
-
+    .f-content{
+        gap:1rem;
+    }
 }

@@ -29,7 +29,7 @@ function Contact() {
                     <span style={{color:darkMode?'white':''}}>Get in touch</span>
                     <span>Contact Me</span>
                     <div className='blur'
-                        style={{ background: '#ABF1FF94', top: '18rem', width: '11rem', height: '15rem', left: '-20%' }}
+                        style={{ background: '#ABF1FF94', top: '4rem', width: '11rem', height: '15rem', left: '-90%' }}
                     ></div>
                 </div>
             </div>
